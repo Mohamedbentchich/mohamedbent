@@ -420,6 +420,28 @@ function stop(input) {
         c.fillText('GAME OVER', window.screen.width / 2 - 200, 300)
     }
 }
+/*=========================phone mode ====================*/
+window.addEventListener("deviceorientation", function(event) {
+    let beta = event.beta
+    let gamma = event.alpha
+
+    if (gamma > 45) {
+        keys.d.pressed = true
+    } else if (gamma < -45) {
+        keys.a.pressed = true
+    } else {
+        keys.d.pressed = false
+        keys.a.pressed = false
+    }
+
+    if (beta < -45) {
+        key.s.pressed = true
+    } else {
+        key.s.pressed = false
+    }
+
+)}
+
 
 
 
