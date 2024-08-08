@@ -439,8 +439,7 @@ window.addEventListener("deviceorientation", function(event) {
     } else {
         key.s.pressed = false
     }
-
-)}
+})
 
 
 
