@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/unnamed.png">
+    <title>Mohamed Bentchich</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/unnamed.png" class="logo" onclick="homeclk()">
+                <ul id="menu">
+                    <li><a href="#header" id="home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="menu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm <span>Mohamed</span></h1>
+                <p>Software-Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/350105011_108731812239412_5517161001601551749_n.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello,I'm Mohamed Bentchich from Algeria, I study computer science and now I'm taking CS50 courses.<br>
+                        I have many hobbies, such as reading, swimming, and traveling, I'm also very interested in sciences such as mathematics, physics, and biology.<br>
+                        I want to become a very competent programmer and have extensive knowledge in all areas of computer science.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-content" id="skills">
+                        <p> I have knowledge of various programming languages such as HTML, JavaScript, CSS, Python, C and SQL</p>
+                        <div class="lang-icons">
+                            <a target="_blank" href="https://www.google.com/search?q=html"><img src="images/html.png"></a>
+                            <a target="_blank" href="https://www.google.com/search?q=css"><img src="images/css.png"></a>
+                            <a target="_blank" href="https://www.google.com/search?q=javascript"><img src="images/js.png"></a>
+                            <a target="_blank" href="https://www.google.com/search?q=python"><img src="images/python.png"></a>
+                            <a target="_blank" href="https://www.google.com/search?q=c"><img src="images/c.png"></a>
+                            <a target="_blank" href="https://www.google.com/search?q=sql"><img src="images/sql.png"></a>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="projects">
+                        <p>These are some of my simple works</p>
+                        <ul>
+                            <li><a target="_blank" href="page1.html">Random_Password_Generator</a></li>
+                            <li><a target="_blank" href="page2.html">Snake_Game</a></li>
+                            <li><a target="_blank" href="page3.html">Pomodoro</a></li>
+                            <li><a target="_blank" href="page4.html">Car Game</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------contact------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> medbentchich22@gmail.com</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/mohamed.bentchich.10"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/MohamedBen91287"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/mbentchich?igsh=eXRkejZmOHdweHBj"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <img src="images/sad.png">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mohamed Bentchich</p>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
