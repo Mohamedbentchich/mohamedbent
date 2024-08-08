@@ -381,12 +381,14 @@ nav .fas{
     margin-bottom: 25px;
 }
 #controls button{
+    font-size: 1.5em;
+    font-weight: 700;
     background-color: #706f6f;
     color: #fff;
     border: none;
     border-radius: 50px;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -399,12 +401,10 @@ nav .fas{
     background-color: hsl(0, 0%, 35%);
 }
 
-#startBtn {
-    font-size: 30px;
-}
+/*==========================page-4======================*/
 
-#stopBtn {
-    font-size: 40px;
+#page4-control-btns {
+    display: none;
 }
 
 /* ----------------css for small screen--------- */
@@ -489,5 +489,23 @@ nav .fas{
         display: none;
     }
     
+    /* ========================page-4====================*/
+
+    #page4-control-btns {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    #page4-control-btns div{
+        display: flex;
+        gap: 90px;
+    }
+    #page4-control-btns button{
+        width: 70px;
+        height: 30px;
+        border-radius: 15px;
+    }
 }
 

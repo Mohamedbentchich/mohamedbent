@@ -421,5 +421,29 @@ function stop(input) {
     }
 }
 
+/*====================phone mode =================*/
+if (window.screen.width <= 600) {
+
+    const leftBtn = document.getElementById('page4-leftBtn')
+    const rightBtn = document.getElementById('page4-rightBtn')  
+    const stopBtn = document.getElementById('page4-stopBtn')
+    let timer = setInterval(function () { 
+        keys.a.pressed = false
+        keys.s.pressed = false
+        keys.d.pressed = false    
+    },2000)
+    leftBtn.addEventListener('click', function () {
+        keys.a.pressed = true
+        lastkey = 'a'
+    })
+    rightBtn.addEventListener('click', function () {
+        keys.d.pressed = true
+        lastkey = 'd'
+    })
+    stopBtn.addEventListener('click', function () {
+        keys.s.pressed = true
+        lastkey = 's'
+    })
+}
 
 

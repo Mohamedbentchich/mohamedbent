@@ -10,17 +10,13 @@ var seconds = 0;
 var minutes = 25;
 function start(){
     if (isrunning){
-        starBtn.textContent = "▶"
-        stopBtn.textContent = "⏹"
-        starBtn.style.fontSize = "30px"
-        stopBtn.style.fontSize = "40px"
+        starBtn.textContent = "Star"
+        stopBtn.textContent = "Reset"
         clearInterval(timer);
         isrunning = false
     } else {
-        starBtn.textContent = "⏸"
-        stopBtn.textContent = "▶▶"
-        starBtn.style.fontSize = "40px"
-        stopBtn.style.fontSize = "30px"
+        starBtn.textContent = "Pause"
+        stopBtn.textContent = "Skip"
         timer = setInterval(update, 1000)
         isrunning = true
     }
