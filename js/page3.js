@@ -10,13 +10,17 @@ var seconds = 0;
 var minutes = 25;
 function start(){
     if (isrunning){
-        starBtn.style.backgroundImage = "url(../images/play-button-arrowhead.png)"
-        stopBtn.style.backgroundImage = "url(../images/stop-button.png)"
+        starBtn.textContent = "▶"
+        stopBtn.textContent = "⏹"
+        starBtn.style.fontSize = "30px"
+        stopBtn.style.fontSize = "40px"
         clearInterval(timer);
         isrunning = false
     } else {
-        starBtn.style.backgroundImage = "url(../images/pause.png)"
-        stopBtn.style.backgroundImage = "url(../images/next-track.png)"
+        starBtn.textContent = "⏸"
+        stopBtn.textContent = "▶▶"
+        starBtn.style.fontSize = "40px"
+        stopBtn.style.fontSize = "30px"
         timer = setInterval(update, 1000)
         isrunning = true
     }
